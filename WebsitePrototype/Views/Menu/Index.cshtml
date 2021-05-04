@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Menu";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Our Food
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    @Html.ActionLink("Home", "Menu", "Home")
+                </li>
+                <li class="active">Our Food</li>
+            </ol>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <img class="img-responsive" src="~/img/services1.jpg" />
+        </div>
+    </div>
+    <!-- /.row -->
+    <!-- Service Tabs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">Our All Day Menu</h2>
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="active">
+                    <a data-toggle="tab" href="#service-one">Sandwiches, Toast And Pancakes</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#service-two">Salad And Munchies</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#service-three">Burgers</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div id="service-one" class="tab-pane fade in active">
+                    <i class="fa fa-gear pull-left fa-4x"></i>
+                    <p>Truffled Egg And Salmon Toast</p>
+                    <p>Grilled Pulled Pork Sandwich</p>
+                    <p>Philly Steak Sandwich</p>
+                    <p>Pancakes</p>
+                </div>
+                <div id="service-two" class="tab-pane fade">
+                    <i class="fa fa-gears pull-left fa-4x"></i>
+                    <p>Classic American Cobb Salad </p>
+                    <p>Macaroni And Cheese</p>
+                    <p>Buffalo Hot Wings</p>
+                    <p>Chilli Beef Hot Dog</p>
+                </div>
+                <div id="service-three" class="tab-pane fade">
+                    <i class="fa fa-magic pull-left fa-4x"></i>
+                    <p>Double Black Angus Cheese Burger</p>
+                    <p>BBQ Beef Burger</p>
+                    <p>Garden Burger</p>
+                    <p>Buttermilk Chicken And Egg Burger</p>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-primary" href="http://localhost:55527/LogIn">Order Now</a>
+    </div>
+</div>

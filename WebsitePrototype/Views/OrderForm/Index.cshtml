@@ -1,0 +1,72 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Order Form";
+}
+<form action="/action_page.php">
+    <div class="container">
+        <h1>Order Form</h1>
+        <p>Please fill in this form to place an order.</p>
+        <hr>
+
+        <h2>Sandwiches, Toasts and Pancakes</h2>
+        <input type="checkbox" id="food1" name="food1" value="food1">
+        <label for="food1">Truffle Egg and Salmon Toast</label><br>
+        <input type="checkbox" id="food2" name="food2" value="food2">
+        <label for="food2">Grilled Pulled Pork Sandwich</label><br>
+        <input type="checkbox" id="food3" name="food3" value="food3">
+        <label for="food3">Philly Steak Sandwich</label><br />
+        <input type="checkbox" id="food4" name="food4" value="food4">
+        <label for="food4">Pancakes</label><br />
+
+        <h2>Salad and Munchies</h2>
+        <input type="checkbox" id="food5" name="food5" value="food5">
+        <label for="food5">Classic American Cobb Salad</label><br />
+        <input type="checkbox" id="food6" name="food6" value="food6">
+        <label for="food6">Macaroni and Cheese</label><br />
+        <input type="checkbox" id="food7" name="food7" value="food7">
+        <label for="food7">Buffalo Hot Wings</label><br />
+        <input type="checkbox" id="food8" name="food8" value="food8">
+        <label for="food8">Chilli Beef Hot Dog</label><br />
+
+        <h2>Burgers</h2>
+        <input type="checkbox" id="food9" name="food9" value="food9">
+        <label for="food9">Double Black Angus Cheese Burger</label><br />
+        <input type="checkbox" id="food10" name="food10" value="food10">
+        <label for="food10">BBQ Beef Burger</label><br />
+        <input type="checkbox" id="food11" name="food11" value="food11">
+        <label for="food11">Garden Burger</label><br />
+        <input type="checkbox" id="food12" name="food12" value="food12">
+        <label for="food12">Buttermilk Chicken and Egg Burger</label><br /><br />
+
+        <label for="name"><b>Name</b></label><br />
+        <input type="text" style="color:black;" placeholder="Name" name="name" id="name"><br /><br />
+
+        <label for="name"><b>Address</b></label><br />
+        <input type="text" style="color:black;" placeholder="Address" name="address" id="address"><br /><br />
+
+        <label for="name"><b>Delivery Date and Time</b></label><br />
+        <input type="text" style="color:black;" placeholder="Date and Time" name="dateandtime" id="dateandtime"><br /><br />
+
+        <label for="name"><b>Contact Number</b></label><br />
+        <input type="text" style="color:black;" placeholder="Contact Number" name="number" id="number"><br /><br />
+
+        <label for="name"><b>Email Address</b></label><br />
+        <input type="text" style="color:black;" placeholder="Email Address" name="email" id="email"><br /><br />
+
+        <label for="name"><b>Additional Food Description</b></label><br />
+        <input type="text" style="color:black;" placeholder="Additional Food Description" name="comments" id="comments"><br /><br />
+
+        <input type="radio" id="mastercard" name="mastercard" value="mastercard">
+        <label for="mastercard">Mastercard</label><br>
+        <input type="radio" id="visa" name="visa" value="visa">
+        <label for="visa">Visa</label><br>
+        <input type="radio" id="nets" name="Nets" value="Nets">
+        <label for="nets">Nets</label><br /><br />
+
+        <a class="btn btn-primary" type="submit" href="http://localhost:55527/ViewOrder/Index">Submit</a><br /><br />
+
+        <p>Already ordered? Check your delivery status <a href="http://localhost:55527/ViewOrder/Index">here!</a></p>
+</form>
+
